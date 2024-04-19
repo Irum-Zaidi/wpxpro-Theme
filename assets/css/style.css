@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.gradientBg {
+    height: 100vh;
+    background-color: #1c15150d;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+/* navbar */
+
+.navMenu {
+    color: #FFFFFF;
+    margin: 0.7rem;
+}
+
+.navMenu:hover {
+    color: #39B54A;
+}
+
+/* Custom CSS for changing text color when clicked */
+.navMenu:active,
+.navMenu:focus {
+    color: #39B54A;
+    /* Set the desired text color when clicked or focused */
+}
+
+.navBarCustomization {
+    padding: 1rem 0;
+    white-space: nowrap;
+}
+
+.getStarted {
+    border: 0.1rem solid;
+    padding: 1rem 2rem !important;
+    border-radius: 1.8rem;
+}
+
+.getStarted:hover {
+    border: 0.1rem solid #39B54A;
+}
+
+.getStarted:focus,
+.getStarted:active {
+    box-shadow: 0 0 0.5rem 0 #39B54A; /* Set the desired box shadow color (red in this case) */
+}
+
+/* Fixed bottom */
+
+.fixedBottom {
+    background: #FFFFFF;
+    text-transform: capitalize;
+    padding: 1% 0%;
+}
+
+.fixedBottomText h1 {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: start;
+    padding-right: 10%;
+    /* white-space: nowrap; */
+}
+
+.fixedBottomText img {
+    height: 1rem;
+    width: 1.1rem;
+}
+
+.fixedBottomText span {
+    color: #727272;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.liveDemoButton {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #39B54A;
+    /* margin: 0% 2%; */
+    padding: 0.7rem 1.2rem;
+    white-space: nowrap;
+    margin-right: 1rem;
+}
+
+.downloadButton {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #39B54A;
+    border: 1px solid !important;
+    border-color: #39B54A;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    padding: 0.7rem 1.2rem;
+    white-space: nowrap;
+    /* margin: 3% 2%; */
+}
+
+/* first Heading */
+
+.breadCrumbs {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 4.8rem;
+}
+
+.breadCrumbs a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+.breadCrumbs a:hover {
+    color: #39B54A !important;
+}
+
+.fisrtHeading {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.imageSection {
+    width: 100%;
+    border-radius: 0;
+}
+
+.contentSection {
+    padding: 4.7rem 0rem;
+    /* white-space: nowrap; */
+}
+
+/* Key features */
+
+
+.keyFeatureList {
+    list-style: none;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #727272;
+    padding-top: 1rem;
+    white-space: nowrap;
+}
+
+.keyFeatureList img {
+
+    padding-right: 2rem;
+}
+
+.paragraghSection {
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #727272;
+    text-transform: capitalize;
+    padding-left: 3rem;
+}
+
+.paragraghList {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+
+.paragraghList a {
+    text-decoration: none;
+    color: #4CAAFD;
+}
+
+.pageHeadings {
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #39B54A;
+    padding-bottom: 3.5rem;
+    text-transform: capitalize;
+}
+
+.viewAllButton {
+    color: #727272;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-right: 0.5rem;
+}
+
+.viewAllButton:hover {
+    color: #39B54A;
+}
+
+
+/* Pages INCLUDED */
+
+.scrollContainer {
+    width: 100%;
+    /* Specify your desired width */
+    height: 510px;
+    /* Specify your desired height */
+    overflow: hidden;
+    position: relative;
+    box-shadow: #39B54A;
+}
+
+.imageScroll {
+    width: 100%;
+    /* Take up the full width of the container */
+    height: auto;
+    /* Automatically adjust the height */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    animation: scrollImage 11s linear infinite;
+    animation-play-state: paused;
+    /* Initially paused */
+}
+
+.imageScroll:hover {
+    animation-play-state: running;
+    /* Start animation on hover */
+}
+
+.imageScroll:not(:hover) {
+    /* animation-play-state: paused; */
+    /* Pause animation when not hovered */
+    /* animation: scrollBack 5s ease-in-out forwards; */
+    /* Slowly scroll back to start */
+    animation-play-state: paused;
+    animation: none;       
+
+}
+
+@keyframes scrollImage {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* Related Themes */
+
+.cardSection {
+    padding: 2.2rem;
+}
+
+.cardTitle {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #727272;
+    white-space: wrap;
+    align-self: center;
+}
+
+.cardSection span {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #727272;
+    border: 1px solid #727272 !important;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    /* cursor: normal; */
+    
+}
+
+.cardSection span:hover {
+    color: #39B54A;
+    border: 1px solid #39B54A !important;
+}
+
+.detailButton {
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+button .detailButton:hover {
+    color: #39B54A;
+}
+
+.cardFooter {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardFooter a {
+    text-decoration: none;
+    color: none;
+}
+
+@media (max-width: 1199px) {
+
+    .gradientBg {
+        height: 150vh;
+    }
+
+    .navMenu {
+        margin: auto;
+    }
+
+    .paragraghSection {
+        font-size: 1rem;
+    }
+
+    .getStarted {
+        padding: 0.8rem 1.5rem !important;
+    }
+
+    .fixedBottomText h1 {
+        font-size: 1rem;
+        padding-right: 10%;
+    }
+
+    .liveDemoButton {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .downloadButton {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .navMenu {
+        font-size: smaller;
+    }
+
+    .getStarted {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .pageHeadings {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .breadCrumbs {
+        font-size: 1rem;
+    }
+
+    .breadCrumbs a {
+        font-size: 1rem;
+    }
+
+    .fisrtHeading {
+        font-size: 2rem;
+    }
+
+    .paragraghSection {
+        padding-left: 1rem;
+    }
+
+    .keyFeatureList {
+        font-size: 1rem;
+    }
+
+    .cardTitle {
+        font-size: 1rem;
+    }
+
+    .cardSection {
+        padding: 1rem;
+    }
+
+    .cardSection span {
+        font-size: 1rem;
+    }
+
+    .detailButton {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .cardFooter {
+        padding: 0.5rem;
+    }
+
+    .cardFooter {
+        justify-content: space-between;
+    }
+
+    .detailButtonImage {
+        width: 1rem;
+    }
+
+    .fixedBottom {
+        padding: 2% 0%;
+    }
+
+    .fixedBottomText {
+        padding: 1rem 0rem;
+    }
+
+    .fixedBottomText h1 {
+        font-size: 1rem;
+    }
+
+    .fixedBottomText img {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .fixedBottomText span {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width : 767px) {
+    .pageHeadings {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .contentSection {
+        padding: 1.5rem 0rem;
+    }
+
+    .fisrtHeading {
+        font-size: 1.5rem;
+    }
+
+    .fixedBottomText h1 {
+        padding-right: 5%;
+    }
+}
+
+@media (max-width : 575px) {
+    .pageHeadings {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .breadCrumbs {
+        padding-top: 1rem;
+    }
+
+    .fisrtHeading {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .paragraghSection {
+        text-align: center;
+    }
+
+    .pageHeadings {
+        text-align: center;
+    }
+
+    .keyFeature {
+        margin-top: 2rem;
+    }
+
+    .keyFeatureList {
+        text-align: center;
+    }
+}

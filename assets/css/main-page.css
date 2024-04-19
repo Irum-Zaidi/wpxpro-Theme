@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gradientBg {
+    /* height: 100%; */
+    background-color: #1c15150d;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+.pageHeading {
+    font-family: Poppins;
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    padding: 10rem 0rem;
+}
+
+.subMenuContainer {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0; */
+}
+
+.subMenu {
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.subMenuText {
+    color: #727272;
+    /* padding: 0; */
+    /* padding-right: 2.5rem; */
+}
+
+.subMenuText:focus,
+.subMenuText:hover {
+    color: #727272;
+    box-shadow: none;
+}
+
+.subMenu button:active,
+.subMenu button:focus {
+    border: 0;
+}
+
+.subMenuText::after {
+    content: '⌄';
+    border: 0;
+}
+
+.searchButton {
+    width: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 1rem;
+    background-image: url('../images/search-normal.webp');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchButton:focus,
+.searchButton:active {
+    width: 50%;
+    border: 0;
+}
+
+
+/* #main {
+    transition: margin-right 0.5s;
+    padding: 16px;
+} */
+
+.filterSideBar {
+    height: 80%;
+    /* Change this value to your desired height */
+    width: 0;
+    /* position: fixed; */
+    position: absolute;
+    top: 41rem;
+    z-index: 1;
+    right: 2rem;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6rem;
+}
+
+.filterSideBar a:hover {
+    color: #f1f1f1;
+}
+
+.filterSideBar .closeContainer h1 {
+    display: flex;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+}
+
+.filterSideBar .closebtn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.filterSideBar .filterSideBarHeading {
+    font-size: 20px;
+    color: white;
+}
+
+.openbtn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #727272;
+    background-color: transparent;
+    padding: 0.65rem 2.2rem;
+    border: 1px solid #727272;
+    border-radius: 10px;
+}
+
+.openbtn:hover,
+.openbtn:active,
+.openbtn:focus {
+    background-color: #727272;
+    color: white;
+}
+
+
+.filterSideBarOption {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    border: 1px solid #727272;
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.filterSideBarOption:hover,
+.filterSideBarOption:focus,
+.filterSideBarOption:active {
+    color: #FFFFFF;
+    background-color: #727272;
+}
+
+
+.SideBarOptionHeading {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #040D1B;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+
+/* Card  */
+
+.cardTitle {
+    padding: 2rem 1.5rem;
+}
+
+.cardTitle h5 {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #727272;
+    text-transform: capitalize;
+}
+
+.cardTitle span {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    text-transform: capitalize;
+    border: 1px solid #727272;
+    padding: 0.2rem 1rem;
+    align-self: center;
+}
+
+.cardFooter {
+    padding: 1.5rem 3.5rem;
+}
+
+.cardFooter button {
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: 0;
+    color: #727272;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+}
+
+.cardFooter span {
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #727272;
+}
+
+.cardFooter i {
+    padding: 0rem 0.5rem;
+}
+
+
+/* Bottom Content  */
+
+.bottomContent {
+    padding: 0% 15%;
+}
+
+.bottomContent p {
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    color: #727272;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+
+}
+
+.bottomContentImage {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    text-transform: capitalize;
+}
+
+.bottomContentImage img {
+    padding: 0rem 2rem;
+}
+
+/* Pagination Section */
+
+.paginationSection {
+    margin: 4rem 0rem;
+}
+
+.customPagination .page-link {
+    background-color: transparent;
+    color: #727272;
+    border: 0;
+}
+
+.customPagination .page-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.searchIcon {
+    width: 100%
+}
+
+.cardsSection {
+    background-color: #F1F1F1;
+    padding: 7rem 0rem;
+}
+
+
+@media (max-width: 991px) {
+
+    .subMenu {
+        font-size: 1rem;
+    }
+
+    .subMenuText {
+        padding-right: 1rem !important;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .searchIcon {
+        width: 100%;
+        padding: 0;
+    }
+
+    .openbtn {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .cardsSection {
+        padding: 4rem 0rem;
+    }
+
+    .cardTitle {
+        padding: 2rem 1.5rem;
+    }
+
+    .cardTitle h5 {
+        font-size: 1rem;
+    }
+
+    .cardTitle span {
+        font-size: 1rem;
+    }
+
+    .cardFooter {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .cardFooter button {
+        font-size: 1rem;
+        padding-left: 12%;
+    }
+
+    .cardFooter span {
+        font-size: 1rem;
+    }
+
+    .cardFooter img {
+        padding: 0rem 0.2rem;
+        width: 1.5rem;
+    }
+
+    .subMenuContainer {
+        padding: 1rem 1rem;
+    }
+
+    .bottomContent {
+        padding: 0%;
+    }
+
+    .bottomContent p {
+        font-size: 1rem;
+    }
+
+    .filterSideBar {
+        top: 37.4rem;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .subMenuText {
+        padding-right: 0.8rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .pageHeading {
+        font-size: 2.4rem;
+        padding: 5rem 0rem;
+    }
+
+    .cardsSection {
+        padding: 3rem 0rem;
+    }
+
+    .cardTitle {
+        padding: 2rem 0.7rem;
+    }
+
+    .cardTitle h5 {
+        font-size: 1rem;
+    }
+
+    .cardTitle span {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .cardFooter {
+        padding: 1rem 1.5rem;
+    }
+
+    .cardFooter button {
+        padding-left: 0%;
+    }
+
+    .cardFooter span {
+        font-size: 1rem;
+    }
+
+    .cardFooter img {
+        padding: 0;
+        margin-right: 0.5rem;
+        width: 1rem;
+    }
+
+    .filterSideBar {
+        top: 24.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .filterSideBar {
+        top: 30.5rem;
+        right: 0rem;
+        width: 17rem;
+        padding: 2rem 1rem;
+    }
+
+}
